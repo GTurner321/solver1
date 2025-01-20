@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgreen;
+}
+
+.score-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.draggable-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.main-container {
+    flex: 1;
+    text-align: center;
+}
+
+.equation-container p {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.message.correct {
+    color: green;
+}
+
+.message.try-again {
+    color: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: blue;
+    color: white;
+}
