@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation 1</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="score-box" id="score">Score = 0</div>
+
+    <div class="main-container">
+        <div class="equation-container" id="equation-1-container">
+            <p id="equation-1">2x + 1 = 9</p>
+            <div class="drop-container">
+                <div class="drop-box symbol" data-pair="symbol-1"></div>
+                <div class="drop-box number" data-pair="number-1"></div>
+                <div style="width: 50px;"></div>
+                <div class="drop-box symbol" data-pair="symbol-1"></div>
+                <div class="drop-box number" data-pair="number-1"></div>
+            </div>
+            <div class="message" id="message-1"></div>
+        </div>
+
+        <div class="equation-container" id="equation-2-container" style="display: none;">
+            <p id="equation-2">2x = 8</p>
+            <div class="drop-container">
+                <div class="drop-box symbol" data-pair="symbol-2"></div>
+                <div class="drop-box number" data-pair="number-2"></div>
+                <div style="width: 50px;"></div>
+                <div class="drop-box symbol" data-pair="symbol-2"></div>
+                <div class="drop-box number" data-pair="number-2"></div>
+            </div>
+            <div class="message" id="message-2"></div>
+        </div>
+
+        <div class="equation-container" id="equation-3-container" style="display: none;">
+            <p id="equation-3">x = 4</p>
+            <div class="message" id="final-message" style="margin-top: 20px; font-size: 20px;"></div>
+            <button id="next-equation-btn" style="display: none;">Next Equation</button>
+        </div>
+    </div>
+
+    <div class="draggable-container">
+        <!-- Draggable items -->
+        <div class="draggable symbol" draggable="true">-</div>
+        <div class="draggable number" draggable="true">1</div>
+        <div class="draggable number" draggable="true">6</div>
+        <div class="draggable symbol" draggable="true">+</div>
+        <div class="draggable number" draggable="true">2</div>
+        <div class="draggable number" draggable="true">7</div>
+        <div class="draggable symbol" draggable="true">x</div>
+        <div class="draggable number" draggable="true">3</div>
+        <div class="draggable number" draggable="true">8</div>
+        <div class="draggable symbol" draggable="true">÷</div>
+        <div class="draggable number" draggable="true">4</div>
+        <div class="draggable number" draggable="true">5</div>
+        <div class="draggable number" draggable="true">9</div>
+        <div class="draggable number" draggable="true">10</div>
+    </div>
+
+    <script src="scripts/equation1.js"></script>
+</body>
+</html>
